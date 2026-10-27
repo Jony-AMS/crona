@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Skyscraper | Crona</title>
+<link rel="icon" type="image/svg+xml" href="../marca/favicon.svg">
+<meta name="description" content="Project Skyscraper: videojuego. Caso de Crona, portfolio de Jonathan Andrés Martínez Severo.">
+<meta name="theme-color" content="#050810">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Crona">
+<meta property="og:title" content="Project Skyscraper | Crona">
+<meta property="og:description" content="Videojuego, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;display=swap">
+<link rel="preload" href="../fuentes/ClusterEdgeTrial-Black.otf" as="font" type="font/otf" crossorigin="">
+<link rel="stylesheet" href="../css/crona.css?v=172">
+<script src="../js/crona.js" defer></script>
+<script src="../js/caso.js" defer></script>
+<script src="../js/maqueta3d.js?v=4" defer></script>
+<script src="../js/maqueta.js" defer></script>
+</head>
+<body data-formato="juego" data-clip="#00E5FF" data-video-mockup="" data-video-principal="">
+<div class="guias" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<div class="cursor" data-js="cursor" aria-hidden="true"><span class="cursor__anillo" data-js="anillo"></span><span class="cursor__punto" data-js="punto"></span></div>
+
+<header class="barra">
+  <a class="barra__marca" href="../index.html" aria-label="Crona, inicio"><svg viewBox="0 0 442.7 107.9" aria-hidden="true"><path class="logo__tinta" d="M0,53.95C0,21.52,21.52,0,48.31,0c21.45,0,39.14,14.08,45.35,36.25h-35.32c-2.74-3.68-6.07-5.56-10.04-5.56-7.8,0-15.46,7.66-15.46,23.250s7.66,23.25,15.46,23.25c4.04,0,7.73-2.02,10.54-5.92h35.24c-6.14,22.39-24.05,36.62-45.79,36.62C21.52,107.9,0,86.38,0,53.95Z"></path><path class="logo__tinta" d="M105.64,2.17h47.23c22.97,0,39.43,16.47,39.43,37.84,0,12.49-5.78,23.33-15.17,30.12l3.61,5.06c1.3,1.73,3.54,2.31,5.56,1.52l9.46-3.61v30.33l-7.66,2.46c-10.54,3.39-23.33.51-28.89-7.87l-12.85-19.43h-8.59v27.15h-32.14V2.17ZM160.16,40.44c0-5.34-4.41-9.75-9.53-9.75h-12.85v19.5h12.85c5.13,0,9.53-4.41,9.53-9.75Z"></path><path fill="#3B6CFF" d="M324.63,105.73c-10.59,0-21.18,0-31.78,0,12.05-33.47,12.05-70.09,0-103.56,10.59,0,21.18,0,31.78,0,12.05,33.47,12.05,70.09,0,103.56Z"></path><polygon class="logo__tinta" points="288.91 70.48 270.62 52.62 232.65 105.73 263.71 105.73 288.91 70.48"></polygon><polygon fill="#3B6CFF" points="235.18 25.78 249.35 2.17 323.39 105.73 292.33 105.73 235.18 25.78"></polygon><path class="logo__tinta" d="M249.36,105.73c-10.59,0-21.18,0-31.78,0-12.05-33.47-12.05-70.09,0-103.56,10.59,0,21.18,0,31.78,0-12.05,33.47-12.05,70.09,0,103.56Z"></path><path fill="#3B6CFF" d="M371.71,2.17h41.6l29.39,103.56h-33.15l-2.67-11.55h-28.82l-2.67,11.55h-33.08L371.71,2.17ZM400.24,65.29l-7.73-33.65-7.8,33.65h15.53Z"></path></svg></a>
+  <nav class="barra__menu etiqueta" aria-label="Secciones del sitio">
+    <a href="../index.html#manifiesto"><span>01/ </span>Manifiesto</a>
+    <a href="../index.html#destacados"><span>02/ </span>Destacados</a>
+    <a href="../index.html#trabajos"><span>03/ </span>Trabajos</a>
+  </nav>
+  <a class="boton etiqueta" href="../index.html#contacto">Hablemos</a>
+  <button class="hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" data-js="hamburguesa"><span></span><span></span></button>
+</header>
+
+<main>
+
+<section class="caso-apertura" id="apertura" data-js="apertura" aria-labelledby="rotulo-caso">
+  <div class="caso-apertura__escena">
+    <div class="caso-composicion caso-composicion--atras" data-js="fondo" aria-hidden="true">
+      <div class="caso-composicion__reticula reticula"></div>
+    </div>
+    <div class="caso-visor" data-js="visor">
+      <div class="caso-visor__capa caso-visor__capa--principal" data-js="capa-principal">
+      </div>
+      <div class="caso-visor__capa caso-visor__capa--mockup" data-js="capa-mockup">
+      </div>
+      <span class="caso-visor__play" data-js="play" aria-hidden="true"></span>
+      <div class="caso-visor__barra" data-js="barra" aria-hidden="true"><span class="caso-visor__cabezal" data-js="cabezal-visor"></span></div>
+    </div>
+    <div class="caso-monitor esquinas esquinas--ambar" data-js="monitor" data-formato="juego" aria-hidden="true">
+      <div class="caso-monitor__guia"><span class="caso-monitor__cruz"></span><span class="caso-monitor__cruz"></span></div>
+    </div>
+    <div class="caso-apertura__titular" data-js="titular">
+      <div class="caso-apertura__sup">
+        <p class="numero" style="margin: 0;"><span>01</span>Videojuego</p>
+      </div>
+      <h1 class="caso-apertura__titulo" id="rotulo-caso" style="--largo: 7;"><span>Project</span><span>Skyscraper</span></h1>
+    </div>
+  </div>
+</section>
+
+<section class="caso-intro grilla-6" id="ficha" aria-label="Ficha del proyecto">
+  <p class="subtitulo col-4" data-revelar="">Un videojuego sobre construir hacia arriba, <span>piso por piso</span>.</p>
+  <dl class="caso-ficha etiqueta col-2 inicio-5" data-revelar="">
+    <div style="align-items: center;"><dt>Año</dt><dd><span class="trabajo__anio" style="background: #FFB020; color: #050810;">2026</span></dd></div>
+    <div><dt>Rol</dt><dd>Game design · Desarrollo</dd></div>
+    <div><dt>Duración</dt><dd>10 semanas</dd></div>
+  </dl>
+</section>
+
+<section class="caso-proceso" id="proceso" data-js="proceso" aria-labelledby="rotulo-proceso">
+  <div class="caso-proceso__escena">
+    <a class="caso-saltar etiqueta" href="#proyecto" data-saltar="">Saltar línea de tiempo<svg class="flecha" viewBox="0 0 16 15" aria-hidden="true" style="transform: rotate(90deg);"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg></a>
+    <div class="caso-proceso__pista" data-js="pista">
+      <div class="caso-proceso__intro">
+        <p class="numero"><span>02</span>Proceso</p>
+        <h2 class="titulo" id="rotulo-proceso">De la idea<br>al juego</h2>
+        <p class="nota" style="max-width: 30ch;">Diez semanas, cuatro tramos. Deslizá para recorrer la línea de trabajo.</p>
+      </div>
+      <article class="caso-tramo" style="--sem: 2;" data-sem="2">
+        <div class="caso-tramo__clip"><span class="etiqueta">01_Concepto</span><span class="etiqueta">Sem 01–02</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">01</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Prototipo</h3>
+            <p class="nota">Idea central del juego, mecánicas principales y referencias visuales.</p>
+            <details class="caso-tareas" name="tareas-skyscraper">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">04</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Definición del género y del público</li>
+                <li>Mecánicas principales: zonificación, calles y demanda RCI</li>
+                <li>Moodboard y referencias visuales</li>
+                <li>Documento de diseño inicial</li>
+              </ul>
+            </details>
+          </div>
+          <div class="marco caso-tramo__imagen"><!-- imagenes/skyscraper-proceso-01.webp --></div>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 2;" data-sem="2">
+        <div class="caso-tramo__clip"><span class="etiqueta">02_Prototipo</span><span class="etiqueta">Sem 03–04</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">02</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Concepto</h3>
+            <p class="nota">Primer prototipo jugable para probar el ritmo y la mecánica de construcción.</p>
+            <details class="caso-tareas" name="tareas-skyscraper">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">04</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Terreno y cámara de maqueta</li>
+                <li>Trazado de calles y zonificación básica</li>
+                <li>Simulación inicial de Pips</li>
+                <li>Primeras pruebas de ritmo</li>
+              </ul>
+            </details>
+          </div>
+          <div class="marco caso-tramo__imagen"><!-- imagenes/skyscraper-proceso-02.webp --></div>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 4;" data-sem="4">
+        <div class="caso-tramo__clip"><span class="etiqueta">03_Producción</span><span class="etiqueta">Sem 05–08</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">03</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Producción</h3>
+            <p class="nota">Niveles, arte, sonido e interfaz del juego.</p>
+            <details class="caso-tareas" name="tareas-skyscraper">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">04</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Modelado de edificios por densidad</li>
+                <li>Creadores de objetos y carreteras</li>
+                <li>Interfaz y vistas de datos</li>
+                <li>Clima, ciclo día/noche y sonido</li>
+              </ul>
+            </details>
+          </div>
+          <div class="marco caso-tramo__imagen"><!-- imagenes/skyscraper-proceso-03.webp --></div>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 2;" data-sem="2">
+        <div class="caso-tramo__clip"><span class="etiqueta">04_Playtesting</span><span class="etiqueta">Sem 09–10</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">04</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Playtesting</h3>
+            <p class="nota">Partidas con jugadores, balance de dificultad y ajustes finales.</p>
+            <details class="caso-tareas" name="tareas-skyscraper">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">04</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Partidas guiadas con jugadores</li>
+                <li>Balance de economía y demanda</li>
+                <li>Optimización de rendimiento</li>
+                <li>Corrección de errores y entrega</li>
+              </ul>
+            </details>
+          </div>
+          <div class="marco caso-tramo__imagen"><!-- imagenes/skyscraper-proceso-04.webp --></div>
+        </div>
+      </article>
+    </div>
+    
+  </div>
+</section>
+
+<section class="caso-relato grilla-6" id="proyecto" aria-labelledby="rotulo-relato">
+  <div class="caso-relato__encabezado col-2">
+    <p class="numero"><span>03</span>Proyecto</p>
+    <h2 class="titulo" id="rotulo-relato">La idea<br>detrás</h2>
+  </div>
+  <div class="caso-relato__cuerpo col-4 inicio-3">
+    <p class="subtitulo" data-revelar="">Contexto del proyecto: de dónde surge el juego, qué experiencia se busca para el jugador y qué referencias lo inspiran.</p>
+    <div class="caso-relato__bloques">
+      <article class="caso-relato__bloque" data-revelar="">
+        <div class="caso-relato__imagen"><!-- imagenes/skyscraper-relato-01.webp --></div>
+        <div class="caso-relato__texto">
+          <h3 class="manifiesto__titulo">Desafío</h3>
+          <p class="nota">Qué se quería lograr con la mecánica de construcción y cuáles eran los límites de alcance y tiempo.</p>
+          <p class="nota">Segundo párrafo para ampliar el desafío: contexto del cliente, objetivos de negocio y qué se esperaba lograr con la pieza.</p>
+        </div>
+      </article>
+      <article class="caso-relato__bloque" data-revelar="">
+        <div class="caso-relato__imagen"><!-- imagenes/skyscraper-relato-02.webp --></div>
+        <div class="caso-relato__texto">
+          <h3 class="manifiesto__titulo">Enfoque</h3>
+          <p class="nota">Cómo se resolvió: diseño de niveles, ritmo de juego, estilo visual y sonido.</p>
+          <p class="nota">Segundo párrafo para ampliar el enfoque: alternativas que se exploraron, por qué se eligió este camino y cómo se validó.</p>
+        </div>
+      </article>
+      <article class="caso-relato__bloque" data-revelar="">
+        <div class="caso-relato__imagen"><!-- imagenes/skyscraper-relato-03.webp --></div>
+        <div class="caso-relato__texto">
+          <h3 class="manifiesto__titulo">Aprendizajes</h3>
+          <p class="nota">Qué se descubrió en el playtesting y cómo cambió el juego a partir de eso.</p>
+          <p class="nota">Segundo párrafo para ampliar los aprendizajes: resultados obtenidos, devoluciones del cliente o del público y próximos pasos.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+<div class="maqueta" aria-label="Maqueta interactiva de la ciudad">
+    <div class="maqueta__fijo grilla-6">
+      <div class="maqueta__visor">
+        <crona-maqueta ruta="../modelos/maqueta/" azimut="45" elevacion="30" role="img" aria-label="Maqueta 3D de la ciudad, arrastrá para girarla"></crona-maqueta>
+        <span class="maqueta__carga etiqueta">Cargando maqueta</span>
+        <div class="maqueta__acciones">
+          <button type="button" class="maqueta__boton" data-maq="todas" aria-label="Agregar todas las capas" title="Agregar todas las capas">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M10 2.5 2.5 6.5 10 10.5l7.5-4z"></path><path d="M2.5 10 10 14l7.5-4"></path><path d="M2.5 13.5 10 17.5l7.5-4"></path></svg>
+          </button>
+          <button type="button" class="maqueta__boton" data-maq="reiniciar" aria-label="Reiniciar la maqueta" title="Reiniciar">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 10a6 6 0 1 0 1.8-4.3"></path><path d="M4 2.8v3.6h3.6"></path></svg>
+          </button>
+        </div>
+      </div>
+      <div class="maqueta__panel">
+        <div class="maqueta__grupo">
+          <div class="maqueta__rotulo etiqueta"><span>Mecánicas</span><span data-txt="contador">00 / 06</span></div>
+          <ul class="maqueta__lista">
+            <li class="maqueta__item" data-act="agua" data-activo="no" data-ab="agua" data-abierto="no">
+              <button type="button" class="maqueta__tarjeta" data-maq="abrir:agua" aria-expanded="false">
+                <span class="maqueta__numero">00:01</span><span class="maqueta__icono"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12.5 7 5.5l4 5 2-2 5 4"></path><path d="M2 16.5c2-1.4 4-1.4 6 0s4 1.4 6 0 3-1 4-.4"></path></svg></span>
+                <span class="maqueta__nombre">Relieve y agua</span><span class="maqueta__mas"></span>
+              </button>
+              <div class="maqueta__cuerpo"><div><p class="nota">Moldeá el terreno: levantá colinas y ubicá ríos. El relieve condiciona dónde se puede construir y cómo se ve la ciudad.</p></div></div>
+            </li>
+            <li class="maqueta__item" data-act="calles" data-activo="no" data-ab="calles" data-abierto="no">
+              <button type="button" class="maqueta__tarjeta" data-maq="abrir:calles" aria-expanded="false">
+                <span class="maqueta__numero">00:02</span><span class="maqueta__icono"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M5 18 8 2M15 18 12 2M10 4v2M10 9v2M10 14v2"></path></svg></span>
+                <span class="maqueta__nombre">Calles y puente</span><span class="maqueta__mas"></span>
+              </button>
+              <div class="maqueta__cuerpo"><div><p class="nota">Trazá calles, avenidas y puentes. Cada tipo de calle tiene su ancho, sus carriles y sus veredas, y define cómo se mueve el tránsito por toda la ciudad.</p></div></div>
+            </li>
+            <li class="maqueta__item maqueta__item--rci" data-act="rci" data-activo="no" data-ab="rci" data-abierto="no">
+              <button type="button" class="maqueta__tarjeta" data-maq="alt:rci" aria-expanded="false">
+                <span class="maqueta__numero">00:03</span><span class="maqueta__icono"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17.5V10l4-3 4 3v7.5z"></path><path d="M10.5 17.5V3.5h7v14z"></path></svg></span>
+                <span class="maqueta__nombre">Demanda RCI</span><span class="maqueta__cuenta etiqueta" data-txt="rciCuenta">0/3</span><span class="maqueta__mas"></span>
+              </button>
+              <div class="maqueta__cuerpo"><div>
+                <div class="maqueta__zonas"><button type="button" class="maqueta__zona" data-zona="residencial" data-act="residencial" data-activo="no" data-maq="alt:residencial" aria-pressed="false"><span class="maqueta__rombo"></span><span class="maqueta__zona-nombre">Residencial</span></button><button type="button" class="maqueta__zona" data-zona="comercial" data-act="comercial" data-activo="no" data-maq="alt:comercial" aria-pressed="false"><span class="maqueta__rombo"></span><span class="maqueta__zona-nombre">Comercial</span></button><button type="button" class="maqueta__zona" data-zona="industria" data-act="industria" data-activo="no" data-maq="alt:industria" aria-pressed="false"><span class="maqueta__rombo"></span><span class="maqueta__zona-nombre">Industria</span></button></div>
+                <p class="nota" data-txt="notaRci"></p>
+              </div></div>
+            </li>
+            <li class="maqueta__item" data-act="pips" data-activo="no" data-ab="pips" data-abierto="no">
+              <button type="button" class="maqueta__tarjeta" data-maq="abrir:pips" aria-expanded="false">
+                <span class="maqueta__numero">00:04</span><span class="maqueta__icono"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6.5" cy="4.5" r="2"></circle><path d="M6.5 8v5M3.5 17.5l3-4.5 3 4.5"></path><path d="M11 16v-3l1.5-2.5h3.5L17.5 13v3z"></path></svg></span>
+                <span class="maqueta__nombre">Pips y autos</span><span class="maqueta__mas"></span>
+              </button>
+              <div class="maqueta__cuerpo"><div><p class="nota">Cada Pip es un habitante con vida propia: sale de su casa, va a trabajar y vuelve. Algunos caminan y otros usan el auto, según la distancia.</p></div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="maqueta__grupo">
+          <div class="maqueta__rotulo etiqueta"><span>Vistas de datos</span><span data-txt="vistaNombre">Normal</span></div>
+          <p class="nota maqueta__intro">La ciudad se compone de distintas capas de datos que permiten analizar qué está sucediendo. Ejemplos:</p>
+          <ul class="maqueta__lista">
+            <li class="maqueta__item" data-act="datos" data-activo="no" data-ab="datos" data-abierto="no">
+              <button type="button" class="maqueta__tarjeta" data-maq="alt:datos" aria-pressed="false">
+                <span class="maqueta__numero">00:01</span><span class="maqueta__icono"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 17V10M10 17V3M16 17v-5"></path></svg></span>
+                <span class="maqueta__nombre">Densidad</span><span class="maqueta__mas"></span>
+              </button>
+              <div class="maqueta__cuerpo"><div><p class="nota">Cada edificio se pinta según cuánta gente vive o trabaja en él, de baja a alta densidad. Así se lee dónde crece la ciudad y dónde todavía hay lugar.</p></div></div>
+            </li>
+            <li class="maqueta__item" data-act="basura" data-activo="no" data-ab="basura" data-abierto="no">
+              <button type="button" class="maqueta__tarjeta" data-maq="alt:basura" aria-pressed="false">
+                <span class="maqueta__numero">00:02</span><span class="maqueta__icono"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 5.5h13M8 5.5V3h4v2.5M5 5.5l1 12h8l1-12"></path></svg></span>
+                <span class="maqueta__nombre">Basura</span><span class="maqueta__mas"></span>
+              </button>
+              <div class="maqueta__cuerpo"><div><p class="nota">Cada edificio produce basura. Las columnas muestran cuánta acumula: si se ponen rojas, los camiones no dan abasto.</p></div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="maqueta__zonas maqueta__zonas--movil" data-ab="rci" data-abierta="no"><button type="button" class="maqueta__zona" data-zona="residencial" data-act="residencial" data-activo="no" data-maq="alt:residencial" aria-pressed="false"><span class="maqueta__rombo"></span><span class="maqueta__zona-nombre">Residencial</span></button><button type="button" class="maqueta__zona" data-zona="comercial" data-act="comercial" data-activo="no" data-maq="alt:comercial" aria-pressed="false"><span class="maqueta__rombo"></span><span class="maqueta__zona-nombre">Comercial</span></button><button type="button" class="maqueta__zona" data-zona="industria" data-act="industria" data-activo="no" data-maq="alt:industria" aria-pressed="false"><span class="maqueta__rombo"></span><span class="maqueta__zona-nombre">Industria</span></button></div>
+        <p class="nota maqueta__nota-movil" aria-live="polite" data-txt="notaMovil"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="caso-resultado seccion-regla" id="resultado" aria-labelledby="rotulo-resultado">
+  <div class="caso-resultado__encabezado">
+    <p class="numero"><span>04</span>Resultado</p>
+    <h2 class="titulo" id="rotulo-resultado">Muestras<br>del trabajo</h2>
+  </div>
+  <div class="caso-galeria grilla-6" data-formato="horizontal">
+    <figure class="caso-final" data-js="video-final" data-revelar="">
+      <div class="caso-final__pantalla marco marco--acento">
+        <span>VIDEO FINAL · PROJECT SKYSCRAPER</span>
+        <button type="button" class="caso-final__play" data-js="play" aria-label="Reproducir video final"><svg viewBox="0 0 16 15" aria-hidden="true"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg></button>
+      </div>
+      <div class="caso-final__barra" aria-hidden="true"><span class="caso-final__avance" data-js="avance"></span><span class="caso-final__cabezal" data-js="cabezal"></span></div>
+      <figcaption class="etiqueta"><span class="caso-final__rotulo">Video final</span><span class="caso-final__tiempo" data-js="tiempo">00:00 / 00:00</span></figcaption>
+    </figure>
+    <div class="caso-galeria__lado">
+      <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-01.png" alt="Ciudad con zonas residencial, comercial e industrial junto al río" loading="lazy"></div></div></figure>
+      <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-02.png" alt="Creador de objetos editando una casa" loading="lazy"></div></div></figure>
+    </div>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-03.png" alt="Creador de carreteras con una entrada en trompeta" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-04.png" alt="Ciudad de noche bajo la lluvia con puente colgante" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-05.png" alt="Mapa de tránsito con cruces trabados" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-06.png" alt="Mapa de residuos con columnas de basura" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-07.png" alt="Mapa de valor del suelo" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/skyscraper/galeria-08.png" alt="Costanera de noche con puente iluminado" loading="lazy"></div></div></figure>
+  </div>
+</section>
+
+<section id="siguiente" class="caso-mas grilla-6" aria-label="Más proyectos">
+  <a class="caso-mas__todos col-3" href="../index.html#trabajos">
+    <span class="caso-mas__accion etiqueta"><svg class="flecha flecha--izq" viewBox="0 0 16 15" aria-hidden="true"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg>Ver todos los proyectos</span>
+  </a>
+  <a class="caso-mas__siguiente col-3" href="los-glaciares.html">
+    <span class="caso-siguiente__datos etiqueta"><span class="trabajo__anio" style="background: #FFB020; color: #050810;">2026</span><span>UX/UI · App</span></span>
+    <span class="trabajo__titulo caso-siguiente__titulo">Los Glaciares</span>
+    <span class="caso-siguiente__ver etiqueta">Ver caso<svg class="flecha" viewBox="0 0 16 15" aria-hidden="true"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg></span>
+  </a>
+</section>
+
+</main>
+
+<footer class="pie grilla-6" style="padding-bottom: 84px;">
+  <p class="etiqueta col-2">Jonathan Martínez Severo | Buenos Aires</p>
+  <ul class="pie__enlaces etiqueta col-2 inicio-3">
+    <li><a href="../index.html#contacto">Behance</a></li>
+    <li><a href="../index.html#contacto">Instagram</a></li>
+    <li><a href="../index.html#contacto">LinkedIn</a></li>
+  </ul>
+  <p class="etiqueta col-2 inicio-5 fin">© 2026 Crona</p>
+</footer>
+
+<nav class="tira" data-js="tira" aria-label="Secuencia del caso">
+  <div class="tira__cuerpo">
+    <div class="tira__regla" aria-hidden="true"></div>
+    <div class="tira__pista">
+      <button type="button" class="tira__clip" data-ir="apertura">Video</button>
+      <button type="button" class="tira__clip" data-ir="ficha">Ficha</button>
+      <button type="button" class="tira__clip" data-ir="proceso">Proceso</button>
+      <button type="button" class="tira__clip" data-ir="proyecto">Proyecto</button>
+      <button type="button" class="tira__clip" data-ir="resultado">Resultado</button>
+      <button type="button" class="tira__clip" data-ir="siguiente">Siguiente</button>
+    </div>
+    <span class="tira__cabezal" data-js="cabezal" aria-hidden="true"></span>
+  </div>
+</nav>
+</body>
+</html>

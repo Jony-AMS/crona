@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEGO × NotCo | Crona</title>
+<link rel="icon" type="image/svg+xml" href="../marca/favicon.svg">
+<meta name="description" content="LEGO × NotCo: experiencia de realidad virtual. Caso de Crona, portfolio de Jonathan Andrés Martínez Severo.">
+<meta name="theme-color" content="#050810">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Crona">
+<meta property="og:title" content="LEGO × NotCo | Crona">
+<meta property="og:description" content="Experiencia de realidad virtual, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;display=swap">
+<link rel="preload" href="../fuentes/ClusterEdgeTrial-Black.otf" as="font" type="font/otf" crossorigin="">
+<link rel="stylesheet" href="../css/crona.css">
+<script src="../js/crona.js" defer></script>
+<script src="../js/caso.js" defer></script>
+<script src="../js/escenario.js" defer></script>
+<script src="../js/modelo3d.js" defer></script>
+</head>
+<body data-formato="vr" data-clip="#3B6CFF" data-video-mockup="" data-video-principal="../videos/lego-notco.mp4">
+<div class="guias" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<div class="cursor" data-js="cursor" aria-hidden="true"><span class="cursor__anillo" data-js="anillo"></span><span class="cursor__punto" data-js="punto"></span></div>
+
+<header class="barra">
+  <a class="barra__marca" href="../index.html" aria-label="Crona, inicio"><svg viewBox="0 0 442.7 107.9" aria-hidden="true"><path class="logo__tinta" d="M0,53.95C0,21.52,21.52,0,48.31,0c21.45,0,39.14,14.08,45.35,36.25h-35.32c-2.74-3.68-6.07-5.56-10.04-5.56-7.8,0-15.46,7.66-15.46,23.250s7.66,23.25,15.46,23.25c4.04,0,7.73-2.02,10.54-5.92h35.24c-6.14,22.39-24.05,36.62-45.79,36.62C21.52,107.9,0,86.38,0,53.95Z"></path><path class="logo__tinta" d="M105.64,2.17h47.23c22.97,0,39.43,16.47,39.43,37.84,0,12.49-5.78,23.33-15.17,30.12l3.61,5.06c1.3,1.73,3.54,2.31,5.56,1.52l9.46-3.61v30.33l-7.66,2.46c-10.54,3.39-23.33.51-28.89-7.87l-12.85-19.43h-8.59v27.15h-32.14V2.17ZM160.16,40.44c0-5.34-4.41-9.75-9.53-9.75h-12.85v19.5h12.85c5.13,0,9.53-4.41,9.53-9.75Z"></path><path fill="#3B6CFF" d="M324.63,105.73c-10.59,0-21.18,0-31.78,0,12.05-33.47,12.05-70.09,0-103.56,10.59,0,21.18,0,31.78,0,12.05,33.47,12.05,70.09,0,103.56Z"></path><polygon class="logo__tinta" points="288.91 70.48 270.62 52.62 232.65 105.73 263.71 105.73 288.91 70.48"></polygon><polygon fill="#3B6CFF" points="235.18 25.78 249.35 2.17 323.39 105.73 292.33 105.73 235.18 25.78"></polygon><path class="logo__tinta" d="M249.36,105.73c-10.59,0-21.18,0-31.78,0-12.05-33.47-12.05-70.09,0-103.56,10.59,0,21.18,0,31.78,0-12.05,33.47-12.05,70.09,0,103.56Z"></path><path fill="#3B6CFF" d="M371.71,2.17h41.6l29.39,103.56h-33.15l-2.67-11.55h-28.82l-2.67,11.55h-33.08L371.71,2.17ZM400.24,65.29l-7.73-33.65-7.8,33.65h15.53Z"></path></svg></a>
+  <nav class="barra__menu etiqueta" aria-label="Secciones del sitio">
+    <a href="../index.html#manifiesto"><span>01/ </span>Manifiesto</a>
+    <a href="../index.html#destacados"><span>02/ </span>Destacados</a>
+    <a href="../index.html#trabajos"><span>03/ </span>Trabajos</a>
+  </nav>
+  <a class="boton etiqueta" href="../index.html#contacto">Hablemos</a>
+  <button class="hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" data-js="hamburguesa"><span></span><span></span></button>
+</header>
+
+<main>
+
+<section class="caso-apertura" id="apertura" data-js="apertura" aria-labelledby="rotulo-caso">
+  <div class="caso-apertura__escena">
+    <div class="caso-composicion caso-composicion--atras" data-js="fondo" aria-hidden="true">
+      <div class="caso-composicion__reticula reticula"></div>
+    </div>
+    <div class="caso-visor" data-js="visor">
+      <div class="caso-visor__capa caso-visor__capa--principal" data-js="capa-principal">
+      </div>
+      <div class="caso-visor__capa caso-visor__capa--mockup" data-js="capa-mockup">
+      </div>
+      <button type="button" class="caso-visor__play" data-js="play" data-pausado="no" aria-label="Pausar video"></button>
+      <div class="caso-visor__barra" data-js="barra">
+        <span class="caso-visor__avance" data-js="avance-visor"></span>
+        <span class="caso-visor__cabezal" data-js="cabezal-visor"></span>
+        <div class="caso-visor__controles">
+          <button type="button" class="caso-visor__control" data-js="ctl-play" data-pausado="no" aria-label="Pausar video"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="ico-pausa" d="M6 4h3v12H6zM11 4h3v12h-3z" fill="currentColor"></path><path class="ico-play" d="M6 3.5 16 10 6 16.5z" fill="currentColor"></path></svg></button>
+          <button type="button" class="caso-visor__control" data-js="ctl-son" data-silencio="si" aria-label="Activar sonido"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7.5h3.2L11 3.6v12.8L6.2 12.5H3z" fill="currentColor"></path><path class="ico-onda" d="M13.6 7.2a4 4 0 0 1 0 5.6M15.8 5a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path class="ico-mute" d="M13.5 7.5l5 5M18.5 7.5l-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+          <span class="caso-visor__tiempo etiqueta" data-js="tiempo-visor">00:00 / 00:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="caso-collage" data-js="collage" aria-hidden="true">
+      <span class="caso-collage__pieza" data-x="-0.25" data-y="0.08" data-s="0.57" data-dx="-1" data-dy="0.5" style="--retardo: 0s;"><img src="../imagenes/lego-ladrillo.webp" alt=""></span>
+      <span class="caso-collage__pieza" data-x="0.49" data-y="-0.65" data-s="0.92" data-dx="1" data-dy="-0.6" style="--retardo: -1.6s;"><img src="../imagenes/lego-carton.webp" alt=""></span>
+      <span class="caso-collage__pieza" data-x="0.686" data-y="0.399" data-s="0.357" data-dx="1" data-dy="0.7" style="--retardo: -3.1s;"><img src="../imagenes/lego-microscopio.webp" alt=""></span>
+    </div>
+    <div class="caso-monitor esquinas esquinas--ambar" data-js="monitor" data-formato="vr" aria-hidden="true">
+      <div class="caso-monitor__guia"><span class="caso-monitor__cruz"></span><span class="caso-monitor__cruz"></span></div>
+    </div>
+    <div class="caso-apertura__titular" data-js="titular">
+      <div class="caso-apertura__sup">
+        <p class="numero" style="margin: 0;"><span>01</span>Experiencia VR</p>
+      </div>
+      <h1 class="caso-apertura__titulo" id="rotulo-caso"><span>LEGO</span><span>× NotCo</span></h1>
+    </div>
+  </div>
+</section>
+
+<section class="caso-intro grilla-6" id="ficha" aria-label="Ficha del proyecto">
+  <p class="subtitulo col-4" data-revelar="">Una experiencia de realidad virtual para la colaboración entre <span>LEGO y NotCo</span>.</p>
+  <dl class="caso-ficha etiqueta col-2 inicio-5" data-revelar="">
+    <div style="align-items: center;"><dt>Año</dt><dd><span class="trabajo__anio" style="background: #FFB020; color: #050810;">2026</span></dd></div>
+    <div><dt>Rol</dt><dd>Diseño UX · Desarrollo VR</dd></div>
+    <div><dt>Duración</dt><dd>8 semanas</dd></div>
+    <div><dt>Soporte</dt><dd>Meta Quest · PC</dd></div>
+  </dl>
+</section>
+
+<section class="caso-proceso" id="proceso" data-js="proceso" aria-labelledby="rotulo-proceso">
+  <div class="caso-proceso__escena">
+    <a class="caso-saltar etiqueta" href="#proyecto" data-saltar="">Saltar línea de tiempo<svg class="flecha" viewBox="0 0 16 15" aria-hidden="true" style="transform: rotate(90deg);"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg></a>
+    <div class="caso-proceso__pista" data-js="pista">
+      <div class="caso-proceso__intro">
+        <p class="numero"><span>02</span>Proceso</p>
+        <h2 class="titulo" id="rotulo-proceso">Tiempo del<br>proyecto</h2>
+        <p class="nota" style="max-width: 30ch;">Proyecto realizado en 8 semanas. Deslizá para recorrer la línea de trabajo.</p>
+      </div>
+      <article class="caso-tramo" style="--sem: 1;" data-sem="1">
+        <div class="caso-tramo__clip"><span class="etiqueta">01_Investigación</span><span class="etiqueta">Sem 01–02</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">01</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Investigación</h3>
+            <p class="nota">Relevamiento de ambas marcas, del público objetivo y del contexto en el que se realizará la experiencia.</p>
+            <details class="caso-tareas" name="tareas-lego">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">04</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Relevamiento de LEGO y NotCo</li>
+                <li>Definición del público objetivo</li>
+                <li>Análisis del espacio del evento</li>
+                <li>Referentes de experiencias VR educativas</li>
+              </ul>
+            </details>
+          </div>
+          <figure class="caso-tramo__figura"><div class="marco caso-tramo__imagen"><img src="../imagenes/lego/proceso-01.jpg" alt="Packs de NotMilk" loading="lazy"></div><figcaption class="caso-tramo__pie">Cortesía de NotCo.</figcaption></figure>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 1;" data-sem="1">
+        <div class="caso-tramo__clip"><span class="etiqueta">02_Concepto</span><span class="etiqueta">Sem 02–03</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">02</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Concepto</h3>
+            <p class="nota">Guion de la experiencia, recorrido del usuario y planificación del evento.</p>
+            <details class="caso-tareas" name="tareas-lego">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">05</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Guion de la experiencia</li>
+                <li>Recorrido del usuario por salas</li>
+                <li>Planificación del evento</li>
+                <li>Personalidad y voz de Giuseppe</li>
+                <li>Diagramas de flujo por sala</li>
+              </ul>
+            </details>
+          </div>
+          <figure class="caso-tramo__figura"><div class="marco caso-tramo__imagen"><img src="../imagenes/lego/proceso-02.jpg" alt="Diagrama de flujo de la Sala 1" loading="lazy"></div><figcaption class="caso-tramo__pie">Flujo de la Sala 1.</figcaption></figure>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 2;" data-sem="2">
+        <div class="caso-tramo__clip"><span class="etiqueta">03_Bocetado</span><span class="etiqueta">Sem 03–05</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">03</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Primeros modelos</h3>
+            <p class="nota">Modelado en baja y blockout de las escenas para comprender el recorrido que el usuario deberá realizar.</p>
+            <details class="caso-tareas" name="tareas-lego">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">03</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Modelado en baja de escenarios</li>
+                <li>Blockout del supermercado y el laboratorio</li>
+                <li>Escala y recorrido en VR</li>
+              </ul>
+            </details>
+          </div>
+          <figure class="caso-tramo__figura"><div class="marco caso-tramo__imagen"><img src="../imagenes/lego/proceso-03.webp" alt="Blockout del supermercado en Blender" loading="lazy"></div><figcaption class="caso-tramo__pie">Blockout del Supermercado.</figcaption></figure>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 1;" data-sem="1">
+        <div class="caso-tramo__clip"><span class="etiqueta">04_Desarrollo</span><span class="etiqueta">Sem 05–06</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">04</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Desarrollo Unity</h3>
+            <p class="nota">Prototipado de la experiencia en Unity, creando un sistema de objetivos central, minijuegos e interacciones.</p>
+            <details class="caso-tareas" name="tareas-lego">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">05</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Sistema central de objetivos</li>
+                <li>Minijuegos e interacciones</li>
+                <li>Integración de Giuseppe</li>
+                <li>Locomoción y teletransporte</li>
+                <li>Grabación e integración de diálogos</li>
+              </ul>
+            </details>
+          </div>
+          <figure class="caso-tramo__figura"><div class="marco caso-tramo__imagen"><img src="../imagenes/lego/proceso-04.jpg" alt="Escena en Unity con el gestor de objetivos" loading="lazy"></div><figcaption class="caso-tramo__pie">Esqueleto del sistema de objetivos.</figcaption></figure>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 1;" data-sem="1">
+        <div class="caso-tramo__clip"><span class="etiqueta">05_Testeo</span><span class="etiqueta">Sem 06–07</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">05</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Pruebas de UX</h3>
+            <p class="nota">Testeo con un grupo pequeño de usuarios para comprobar el flujo de la experiencia y encontrar errores.</p>
+            <details class="caso-tareas" name="tareas-lego">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">03</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Armado del stand de testeo</li>
+                <li>Pruebas con usuarios</li>
+                <li>Registro de errores y fricciones</li>
+              </ul>
+            </details>
+          </div>
+          <figure class="caso-tramo__figura"><div class="marco caso-tramo__imagen"><img src="../imagenes/lego/proceso-05.png" alt="Stand de testeo con la experiencia" loading="lazy"></div><figcaption class="caso-tramo__pie">Stand de testeo.</figcaption></figure>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 1;" data-sem="1">
+        <div class="caso-tramo__clip"><span class="etiqueta">06_Pulido</span><span class="etiqueta">Sem 07–08</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">06</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Iteración</h3>
+            <p class="nota">Ajustes finales a los escenarios e implementación de UI explicativa a través del feedback de los testeos.</p>
+            <details class="caso-tareas" name="tareas-lego">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">04</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Ajustes de escenarios</li>
+                <li>UI explicativa</li>
+                <li>Modelos finales</li>
+                <li>Optimización para Meta Quest</li>
+              </ul>
+            </details>
+          </div>
+          <figure class="caso-tramo__figura"><div class="marco caso-tramo__imagen"><img src="../imagenes/lego/proceso-06.png" alt="Granja LEGO con tractor en Blender" loading="lazy"></div><figcaption class="caso-tramo__pie">Pulido y modelos finales.</figcaption></figure>
+        </div>
+      </article>
+      <article class="caso-tramo" style="--sem: 1;" data-sem="1">
+        <div class="caso-tramo__clip"><span class="etiqueta">07_Entrega</span><span class="etiqueta">Sem 08</span></div>
+        <div class="caso-tramo__cuerpo">
+          <div class="caso-tramo__texto">
+            <p class="manifiesto__marca caso-tramo__tiempo"><span class="manifiesto__numero">07</span></p>
+            <h3 class="manifiesto__titulo caso-tramo__nombre">Finalización y entrega</h3>
+            <details class="caso-tareas" name="tareas-lego">
+              <summary class="caso-tareas__boton etiqueta">Tareas<span class="caso-tareas__cuenta">03</span><span class="caso-tareas__mas" aria-hidden="true">+</span></summary>
+              <ul class="caso-tareas__lista">
+                <li>Build final para Meta Quest y PC</li>
+                <li>Instalación en el evento</li>
+                <li>Entrega al cliente</li>
+              </ul>
+            </details>
+          </div>
+          <figure class="caso-tramo__figura"><div class="marco caso-tramo__imagen"><img src="../imagenes/lego/proceso-07.png" alt="Pantalla de inicio de la experiencia en VR" loading="lazy"></div><figcaption class="caso-tramo__pie">Comienzo de la experiencia.</figcaption></figure>
+        </div>
+      </article>
+    </div>
+    
+  </div>
+</section>
+
+<section class="caso-relato grilla-6" id="proyecto" aria-labelledby="rotulo-relato">
+  <div class="caso-relato__encabezado col-2">
+    <p class="numero"><span>03</span>Proyecto</p>
+    <h2 class="titulo" id="rotulo-relato">Creando<br>el mundo</h2>
+  </div>
+  <div class="caso-relato__cuerpo col-4 inicio-3">
+    <p class="subtitulo" data-revelar="">La mayoría de las personas desconoce cómo se produce lo que come, qué procesos hay, cuál es su impacto ambiental real y qué alternativas existen.</p>
+  </div>
+  <div class="caso-escenario" data-js="escenario">
+    <div class="caso-escenario__fijo grilla-6">
+      <div class="caso-escenario__modelo">
+        <button type="button" class="caso-audio" data-paso="0" data-js="audio-btn" aria-label="Escuchar a Giuseppe" data-sonando="no">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7.5h3.2L11 3.6v12.8L6.2 12.5H3z" fill="currentColor"></path><path class="caso-audio__onda" d="M13.6 7.2a4 4 0 0 1 0 5.6M15.8 5a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+        </button>
+        <audio data-js="audio" src="../audio/giuseppe.mp3" preload="none"></audio>
+        <crona-modelo data-js="modelo" base="../modelos/lego-base.glb?v=2" figuras="../modelos/lego-giuseppe.glb?v=2|../modelos/lego-lab.glb?v=2|../modelos/lego-carro.glb?v=2" activa="0" azimut="45" elevacion="30" aria-label="Modelo 3D, arrastrá para girarlo" role="img" style="position: absolute; inset: 0;"></crona-modelo>
+      </div>
+      <div class="caso-escenario__textos">
+        <ol class="caso-escenario__pasos">
+          <li data-paso="0"><button type="button" class="caso-escenario__paso" data-ir="0" aria-label="Ver parte 1"><span class="caso-escenario__rombo"></span>01</button></li>
+          <li data-paso="1"><button type="button" class="caso-escenario__paso" data-ir="1" aria-label="Ver parte 2"><span class="caso-escenario__rombo"></span>02</button></li>
+          <li data-paso="2"><button type="button" class="caso-escenario__paso" data-ir="2" aria-label="Ver parte 3"><span class="caso-escenario__rombo"></span>03</button></li>
+        </ol>
+        <div class="caso-escenario__pila">
+          <article class="caso-escenario__texto" data-paso="0">
+            <h3 class="manifiesto__titulo">La IA <span style="color: #00E5FF;">Giuseppe</span></h3>
+            <p class="nota">Para guiar la experiencia se decidió personificar a la <strong style="background: linear-gradient(90deg, #3B6CFF, #00E5FF); -webkit-background-clip: text; background-clip: text; color: transparent;">inteligencia artificial</strong> utilizada por NotCo en el desarrollo de sus productos. Él estará presente en cada momento.</p>
+            <p class="nota">Giuseppe presenta los mini juegos de manera lúdica pero, a su vez, nos enseña de manera sencilla y clara acerca del por qué de cada paso de la experiencia.</p>
+          </article>
+          <article class="caso-escenario__texto" data-paso="1">
+            <h3 class="manifiesto__titulo">Aprendizaje</h3>
+            <p class="nota">El objetivo es que el usuario aprenda el proceso que hay detrás de los productos NotCo. Se comienza escogiendo el producto en el <strong style="background: linear-gradient(90deg, #3B6CFF, #00E5FF); -webkit-background-clip: text; background-clip: text; color: transparent;">supermercado</strong> para luego ir al <strong style="background: linear-gradient(90deg, #3B6CFF, #00E5FF); -webkit-background-clip: text; background-clip: text; color: transparent;">laboratorio</strong>. Allí se aprende acerca de las moléculas que le dan sabor, aroma y textura al producto de origen animal que busca sustituir. Luego, se avanza a la <strong style="background: linear-gradient(90deg, #3B6CFF, #00E5FF); -webkit-background-clip: text; background-clip: text; color: transparent;">granja</strong> para buscar sustitutos que otorguen estas características. Y por último, se visita la <strong style="background: linear-gradient(90deg, #3B6CFF, #00E5FF); -webkit-background-clip: text; background-clip: text; color: transparent;">fábrica</strong> para ver el proceso industrial.</p>
+          </article>
+          <article class="caso-escenario__texto" data-paso="2">
+            <h3 class="manifiesto__titulo">Interactividad</h3>
+            <p class="nota">El foco de la experiencia está en <strong style="background: linear-gradient(90deg, #3B6CFF, #00E5FF); -webkit-background-clip: text; background-clip: text; color: transparent;">aprender jugando</strong>. Los usuarios pueden interactuar con múltiples objetos y participar de mini juegos.</p>
+            <p class="nota">Comenzando en el supermercado, el usuario puede escoger el producto NotCo con el que quiere aprender. Luego, en el laboratorio, los usuarios se encogen a nivel molecular para interactuar con ellas. Posteriormente se visita la granja para encontrar materia prima que proporcione las características necesarias. Y por último, se interviene en el proceso industrial para lograr crear el producto y envasarlo.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="caso-resultado seccion-regla" id="resultado" aria-labelledby="rotulo-resultado">
+  <div class="caso-resultado__encabezado">
+    <p class="numero"><span>04</span>Resultado</p>
+    <h2 class="titulo" id="rotulo-resultado">Muestras<br>del trabajo</h2>
+  </div>
+  <div class="caso-galeria grilla-6" data-formato="horizontal">
+    <figure class="caso-final" data-js="video-final" data-youtube="m2A49pVWBzY" data-revelar="">
+      <div class="caso-final__pantalla marco marco--acento">
+        <img src="https://i.ytimg.com/vi/m2A49pVWBzY/maxresdefault.jpg" alt="Video final de LEGO × NotCo" loading="lazy">
+        <button type="button" class="caso-final__play" data-js="play" aria-label="Reproducir video final"><svg viewBox="0 0 16 15" aria-hidden="true"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg></button>
+      </div>
+      <div class="caso-final__barra" aria-hidden="true"><span class="caso-final__avance" data-js="avance"></span><span class="caso-final__cabezal" data-js="cabezal"></span></div>
+      <figcaption class="etiqueta"><span class="caso-final__rotulo">Video final</span><span class="caso-final__tiempo" data-js="tiempo">00:00 / 00:00</span></figcaption>
+    </figure>
+    <div class="caso-galeria__lado">
+      <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-01.png" alt="Granja con tractor y Giuseppe" loading="lazy"></div></div></figure>
+      <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-02.png" alt="Laboratorio con molécula armada" loading="lazy"></div></div></figure>
+    </div>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-03.png" alt="Mesa del laboratorio" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-04.png" alt="Ficha de aroma: vainillina" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-05.png" alt="Giuseppe da la bienvenida al laboratorio" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-06.png" alt="Tubos de sabor, textura y aroma" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-07.png" alt="Góndola de NotMilk en el supermercado" loading="lazy"></div></div></figure>
+    <figure class="caso-pieza" data-revelar=""><div class="caso-pieza__ventana" role="button" tabindex="0" aria-label="Ampliar imagen"><div class="marco"><img src="../imagenes/lego/galeria-08.png" alt="Supermercado con carrito y Giuseppe" loading="lazy"></div></div></figure>
+  </div>
+</section>
+
+<section id="siguiente" class="caso-mas grilla-6" aria-label="Más proyectos">
+  <a class="caso-mas__todos col-3" href="../index.html#trabajos">
+    <span class="caso-mas__accion etiqueta"><svg class="flecha flecha--izq" viewBox="0 0 16 15" aria-hidden="true"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg>Ver todos los proyectos</span>
+  </a>
+  <a class="caso-mas__siguiente col-3" href="project-skyscraper.html">
+    <span class="caso-siguiente__datos etiqueta"><span class="trabajo__anio" style="background: #FFB020; color: #050810;">2026</span><span>Videojuego</span></span>
+    <span class="trabajo__titulo caso-siguiente__titulo">Project Skyscraper</span>
+    <span class="caso-siguiente__ver etiqueta">Ver caso<svg class="flecha" viewBox="0 0 16 15" aria-hidden="true"><path d="M16 7.5L4.75 13.9952L4.75 1.00481L16 7.5Z"></path><rect y="1" width="2" height="13"></rect></svg></span>
+  </a>
+</section>
+
+</main>
+
+<footer class="pie grilla-6" style="padding-bottom: 84px;">
+  <p class="etiqueta col-2">Jonathan Martínez Severo | Buenos Aires</p>
+  <ul class="pie__enlaces etiqueta col-2 inicio-3">
+    <li><a href="../index.html#contacto">Behance</a></li>
+    <li><a href="../index.html#contacto">Instagram</a></li>
+    <li><a href="../index.html#contacto">LinkedIn</a></li>
+  </ul>
+  <p class="etiqueta col-2 inicio-5 fin">© 2026 Crona</p>
+</footer>
+
+<nav class="tira" data-js="tira" aria-label="Secuencia del caso">
+  <div class="tira__cuerpo">
+    <div class="tira__regla" aria-hidden="true"></div>
+    <div class="tira__pista">
+      <button type="button" class="tira__clip" data-ir="apertura">Video</button>
+      <button type="button" class="tira__clip" data-ir="ficha">Ficha</button>
+      <button type="button" class="tira__clip" data-ir="proceso">Proceso</button>
+      <button type="button" class="tira__clip" data-ir="proyecto">Proyecto</button>
+      <button type="button" class="tira__clip" data-ir="resultado">Resultado</button>
+      <button type="button" class="tira__clip" data-ir="siguiente">Siguiente</button>
+    </div>
+    <span class="tira__cabezal" data-js="cabezal" aria-hidden="true"></span>
+  </div>
+</nav>
+</body>
+</html>
